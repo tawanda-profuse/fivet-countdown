@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fivet Countdown</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="/photos/fivet-logo.png"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome Link: -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="header-nav">
+      <div class="navbar__container">
+        <a class="header-title" href="/">
+          <img
+            width="150px"
+            src="/photos/fivet-logo.png"
+            alt="Fivet Logo"
+            id="navbar__logo"
+          />
+        </a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav">
+          <li class="navbar__item">
+            <a class="navbar__links" href="https://google.com" target="_blank">Search <i class="fa fa-search" style="margin-left: 20px;"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="house">
+      <img
+        src="/photos/fivet-logo.png"
+        class="house-image"
+        alt="Fivet logo as the background picture"
+      />
+      <div class="user-input">
+        <label for="minutes">Countdown:</label>
+        <input
+          type="number"
+          name="minutes"
+          value="0"
+          min="0"
+          id="minutes"
+          placeholder="(Enter minutes)"
+        />
+        <button id="startBtn" title="Start the countdown">Start</button>
+      </div>
+      <div class="countdown">
+        <div class="alert-box">
+          <p id="userAlert">Press 'Start'</p>
+        </div>
+        <div class="count-info">
+          <span id="time">--</span>
+          <h1 id="divide">:</h1>
+          <h1 id="seconds">--</h1>
+          <button class="pause-btn hide" id="pauseBtn" title="Pause the timer">
+            <i class="fas fa-pause"></i>
+          </button>
+        </div>
+        <div class="count-buttons">
+          <button
+            id="plusOne"
+            class="hide active"
+            title="Increase timer speed by 1"
+          >
+            1X
+          </button>
+          <button
+            id="plusOneHalf"
+            class="hide"
+            title="Increase timer speed by 1.5"
+          >
+            1.5X
+          </button>
+          <button id="plusTwo" class="hide" title="Increase timer speed by 2">
+            2X
+          </button>
+          <button id="reset" class="hide reset-btn" title="Reset timer">
+            <i class="fas fa-power-off"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer title="Access the pin app website">
+      <a href="#" target="_blank">Go to Pin App</a>
+    </footer>
+  </body>
+</html>
